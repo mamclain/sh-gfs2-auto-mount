@@ -5,7 +5,7 @@ major_version=1
 minor_version=0
 
 # a flag for debug messages
-debug=1
+debug=0
 mode=1
 
 
