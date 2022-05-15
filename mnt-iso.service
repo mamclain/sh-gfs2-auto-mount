@@ -6,8 +6,8 @@ After=open-iscsi.service dlm.service corosync.service
 [Service]
 Type=oneshot
 RemainAfterExit=true
-ExecStart=/bin/bash -c "/usr/local/bin/gfs2_auto_mount.sh -d /dev/disk/by-path/ip-X.X.X.X:PORT-iscsi-iqn.YYYY-MM.DOMAIN.com:lun1-lun-1 -m /mnt/iso -d"
-ExecStop=/bin/bash -c "/usr/local/bin/gfs2_auto_mount.sh -m /mnt/iso -u -d"
+ExecStart=/bin/bash -c "/usr/local/bin/gfs2_auto_mount.sh -d /dev/disk/by-path/ip-X.X.X.X:PORT-iscsi-iqn.YYYY-MM.DOMAIN.com:lun1-lun-1 -m /mnt/iso -v"
+ExecStop=/bin/bash -c "/usr/local/bin/gfs2_auto_mount.sh -m /mnt/iso -u -v"
 
 
 [Install]
